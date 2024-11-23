@@ -28,8 +28,8 @@ function Navbar() {
                 animate={{ opacity: isVisibleBar ? 1 : 0, y: isVisibleBar ? 0 : -50 }}
                 transition={{ duration: 1 }}
                 >
-            <div className='blur-gradient z-50 w-screen fixed backdrop-blur-lg rounded-none pt-2 hidden sm:flex justify-around sm:gap-40 gap-20 items-center pr-10 font-semibold text-xl sm:pt-4'>
-                <img src={logo} className='h-26'/>
+            <div className='blur-gradient z-50 w-screen fixed backdrop-blur-lg rounded-none pt-2 hidden sm:flex justify-around sm:gap-40 gap-20 items-center pr-10 font-semibold text-base sm:pt-4'>
+                <img src={logo} className='h-16'/>
 
                 <a href='#home' className='cursor-pointer navbar-shadow hover:opacity-100 opacity-75 transition duration-300'>Home</a>
                 <a href='#benefits' className='cursor-pointer navbar-shadow hover:opacity-100 opacity-75 transition duration-300'>Benefits</a>
@@ -40,13 +40,13 @@ function Navbar() {
             </div>
         </motion.div>   
 
-        <div className={`z-50 w-full fixed backdrop-blur-lg pt-2 sm:hidden font-medium text-lg flex px-10 justify-between items-center`}>
+        <div className={`z-50 w-full fixed backdrop-blur-lg pt-2 sm:hidden font-medium text-base flex px-10 justify-between items-center`}>
             <motion.div
                 className=""
                 initial={{ opacity: 0, y: -50 }}
                 animate={{ opacity: isVisible ? 1 : 0, y: isVisible ? 0 : -50 }}
                 transition={{ duration: 1 }}>
-                    <img src={logoimg} className='h-14'/>
+                    <img src={logoimg} className='h-12'/>
             </motion.div>
             {
                 menu ? 

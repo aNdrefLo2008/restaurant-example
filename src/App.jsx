@@ -23,16 +23,16 @@ function App() {
                 >
           <div className='hidden sm:block bg-blur-blue blur-[400px] h-96 w-96 rounded-full absolute -right-20 -top-20'></div>
           <div className='hidden sm:block bg-primary-darker blur-[400px] h-96 w-96 rounded-full absolute -left-72 top-[800px]'></div>
-          <div className='hidden sm:block bg-accent blur-[250px] h-96 w-96 rounded-full absolute left-[600px] top-64'></div>
+          
         </motion.div>
         <Navbar />
         <Hero />
         <Benefits /> 
         <Menu />
         <Times />
-        <Testimonials />
+        {/*<Testimonials />
         <FAQs />
-        <CTA />
+        <CTA />*/}
       </div>
     </>
   )

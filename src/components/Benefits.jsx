@@ -4,6 +4,10 @@ import secondbenefit from '../assets/2ndben.svg'
 import thirdbenefit from '../assets/3rdben.svg'
 import fourthbenefit from '../assets/4thben.svg'
 import { motion } from 'framer-motion'
+import { IoMdCart } from "react-icons/io";
+import { IoFastFoodOutline } from 'react-icons/io5'
+import { FaBold } from 'react-icons/fa'
+import { FaBuildingColumns } from 'react-icons/fa6'
 
 function Benefits() {
 
@@ -39,7 +43,7 @@ function Benefits() {
 
             <div className=' card relative rounded-3xl'>
               <div className='flex flex-col gap-4 justify-center items-center p-8 card-content'>
-                <img src={firstbenefit} className='h-26 sm:h-40'/>
+                <IoMdCart size={42} />
                 <div className='flex flex-col gap-2 items-center'>
                   <h2 className='text-xl lg:text-3xl font-semibold'>Efficiency</h2>
                   <h4 className='text-base sm:text-xl font-light max-w-40 sm:max-w-60 text-center'>Streamlined kitchen and tech cut wait times</h4>
@@ -55,7 +59,7 @@ function Benefits() {
           transition={{ duration: 1 }}>
           <div className=' card relative rounded-3xl'>
             <div className='flex flex-col gap-4 justify-center items-center p-8 card-content'>
-              <img src={secondbenefit} className='h-26 sm:h-40'/>
+            <FaBold size={42} />
               <div className='flex flex-col gap-2 items-center'>
                 <h2 className='text-xl lg:text-3xl font-semibold'>Ambiance</h2>
                 <h4 className='text-base sm:text-xl font-light max-w-40 sm:max-w-60 text-center'>Modern design elevates dining experience</h4>
@@ -70,7 +74,7 @@ function Benefits() {
           transition={{ duration: 1 }}>
           <div className=' card relative rounded-3xl'>
             <div className='flex flex-col gap-4 justify-center items-center p-8 card-content'>
-                <img src={thirdbenefit} className='h-26 sm:h-40'/>
+            <FaBuildingColumns size={42} />
                   <div className='flex flex-col gap-2 items-center'>
                     <h2 className='text-xl lg:text-3xl font-semibold'>Sustainability</h2>
                     <h4 className='text-base sm:text-xl font-light max-w-40 sm:max-w-60 text-center'> Eco-friendly practices, local ingredients</h4>
@@ -85,7 +89,7 @@ function Benefits() {
           transition={{ duration: 1 }}>
           <div className='card relative rounded-3xl '>
             <div className='flex flex-col gap-4 justify-center items-center p-8 card-content'>
-              <img src={fourthbenefit} className='h-26 sm:h-40'/>
+              <IoFastFoodOutline size={42} />
                 <div className='flex flex-col gap-2 items-center'>
                   <h2 className='text-xl lg:text-3xl font-semibold'>Productivity</h2>
                   <h4 className='text-base sm:text-xl font-light max-w-40 sm:max-w-60 text-center'> Optimized processes reduce customer wait times</h4>

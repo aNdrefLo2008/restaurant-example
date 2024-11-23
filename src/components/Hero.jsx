@@ -18,8 +18,8 @@ function Hero() {
 
   return (
     <div className='min-h-screen max-w-screen pt-20 ' id='home'>
-        <div className='flex text-center sm:text-start sm:flex-row flex-col justify-center gap-6 mt-16 sm:mt-0 sm:gap-24 items-center'>
-            <div className='sm:-mt-32 -mt-10 '>
+        <div className='flex text-center sm:text-start sm:flex-row flex-col justify-center gap-6 mt-16 sm:mt-0 sm:gap-0 items-center'>
+            <div className='sm:-mt-32 sm:-mr-10 -mt-10 '>
 
                 <motion.div
                 className=""
@@ -67,7 +67,7 @@ function Hero() {
                 </motion.div>
             </div>
             <motion.div
-                    className=""
+                    className="sm:-ml-10 "
                     initial={{ opacity: 0, y: 100 }}
                     animate={{ opacity: isVisible ? 1 : 0, y: isVisible ? 0 : 100 }}
                     transition={{ duration: 1 }}>

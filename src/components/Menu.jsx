@@ -14,8 +14,8 @@ function Menu() {
 
   useEffect(() => {
     const handleScroll = () => {
-      const triggerPoint = 1500;
-      const triggerPoint2 = 1200;
+      const triggerPoint = 1000;
+      const triggerPoint2 = 800;
       setIsVisible(window.scrollY > triggerPoint);
       setIsVisibleText(window.scrollY > triggerPoint2);
     };
@@ -34,7 +34,7 @@ function Menu() {
               initial={{ opacity: 0, y:100 }}
               animate={{ opacity: isVisibleText ? 1 : 0, y: isVisibleText ? 0 : 100 }}
               transition={{ duration: 1, ease: "easeOut" }}>
-          <h2 id='menu' className='text-3xl sm:text-5xl font-semibold'>
+          <h2 id='menu' className='text-2xl sm:text-4xl font-semibold'>
             Our Specialities
           </h2>
         </motion.div>
@@ -48,8 +48,8 @@ function Menu() {
               <div className='bg-text blur-[100px] h-28 w-28 rounded-full absolute bottom-0 left-32'></div>
               <img src={firstMenuImg}/>
               <div className='flex flex-col gap-1'>
-                <h2 className='font-semibold text-xl sm:text-2xl'>Pizza</h2>
-                <h4 className='font-light text-lg sm:text-xl'>Iconic Italian dish with toppings</h4>
+                <h2 className='font-semibold text-base sm:text-xl'>Pizza</h2>
+                <h4 className='font-light text-sm sm:text-base'>Iconic Italian dish with toppings</h4>
               </div>
             </div>
           </motion.div>
@@ -66,8 +66,8 @@ function Menu() {
               <div className='bg-text blur-[100px] h-28 w-28 rounded-full absolute bottom-0 left-32'></div>
               <img src={secondMenuImg}/>
               <div className='flex flex-col gap-1'>
-                <h2 className='font-semibold text-xl sm:text-2xl'>Sushi</h2>
-                <h4 className='font-light text-lg sm:text-xl'>Japanese rice and seafood rolls</h4>
+                <h2 className='font-semibold text-base sm:text-xl'>Sushi</h2>
+                <h4 className='font-light text-sm sm:text-base'>Japanese rice and seafood rolls</h4>
               </div>
             </div>
           </motion.div>
@@ -85,8 +85,8 @@ function Menu() {
               <div className='bg-text blur-[100px] h-28 w-28 rounded-full absolute -bottom-20 left-32'></div>
               <img src={thirdMenuImg}/>
               <div className='flex flex-col gap-1'>
-                <h2 className='font-semibold text-xl sm:text-2xl'>Taco</h2>
-                <h4 className='font-light text-lg sm:text-xl'>Mexican folded tortilla with fillings</h4>
+                <h2 className='font-semibold text-base sm:text-xl'>Taco</h2>
+                <h4 className='font-light text-sm sm:text-base'>Mexican folded tortilla with fillings</h4>
               </div>
             </div>
 
@@ -104,8 +104,8 @@ function Menu() {
             <div className='flex flex-col sm:gap-6 gap-4 black-gradient p-6 inner-glow rounded-2xl'>
               <img src={fourthMenuImg}/>
               <div className='flex flex-col gap-1'>
-                <h2 className='font-semibold text-xl sm:text-2xl'>Soup</h2>
-                <h4 className='font-light text-lg sm:text-xl'>Warm broth with vegetables or meat</h4>
+                <h2 className='font-semibold text-base sm:text-xl'>Soup</h2>
+                <h4 className='font-light text-sm sm:text-base'>Warm broth with vegetables or meat</h4>
               </div>
             </div>
           </motion.div>
@@ -121,8 +121,8 @@ function Menu() {
             <div className='flex flex-col sm:gap-6 gap-4 black-gradient inner-glow p-6 rounded-2xl'>
               <img src={fifthMenuImg}/>
               <div className='flex flex-col gap-1'>
-                <h2 className='font-semibold text-xl sm:text-2xl'>Salad</h2>
-                <h4 className='font-light text-lg sm:text-xl'>Fresh mix of greens and veggies</h4>
+                <h2 className='font-semibold text-base sm:text-xl'>Salad</h2>
+                <h4 className='font-light text-sm sm:text-base'>Fresh mix of greens and veggies</h4>
               </div>
             </div>
           </motion.div>
@@ -139,8 +139,8 @@ function Menu() {
             <div className='flex flex-col sm:gap-6 gap-4 black-gradient p-6 inner-glow rounded-2xl'>
               <img src={sixthMenuImg}/>
               <div className='flex flex-col gap-1'>
-                <h2 className='font-semibold text-xl sm:text-2xl'>Pasta</h2>
-                <h4 className='font-light text-lg sm:text-xl'>Italian noodles with various sauces</h4>
+                <h2 className='font-semibold text-base sm:text-xl'>Pasta</h2>
+                <h4 className='font-light text-sm sm:text-base'>Italian noodles with various sauces</h4>
               </div>
             </div>
           </motion.div>

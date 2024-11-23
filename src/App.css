@@ -48,7 +48,7 @@ body {
 }
 
 .button-shadow:hover {
-    box-shadow: 0px 2px 25px #C7AEAE;
+    box-shadow: 0px 2px 25px #baa8a8;
 }
 
 /* Apply both slide and fade-in animations */
