@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react'
 import logo from '../assets/logo.svg'
 import logoimg from '../assets/logoimg.png'
+import restaurant_logo_1 from "../assets/restaurant_logo_1.png"
+import restaurant_logo_2 from "../assets/restaurant_logo_2.png"
 import { HiMenuAlt2 } from "react-icons/hi";
 import { RxCross1 } from "react-icons/rx";
 import { motion } from 'framer-motion';
@@ -28,8 +30,8 @@ function Navbar() {
                 animate={{ opacity: isVisibleBar ? 1 : 0, y: isVisibleBar ? 0 : -50 }}
                 transition={{ duration: 1 }}
                 >
-            <div className='blur-gradient z-50 w-screen fixed backdrop-blur-lg rounded-none pt-2 hidden sm:flex justify-around sm:gap-40 gap-20 items-center pr-10 font-semibold text-base sm:pt-4'>
-                <img src={logo} className='h-16'/>
+            <div className='blur-gradient z-50 w-screen fixed -mt-5 backdrop-blur-lg rounded-none pt-2 hidden sm:flex justify-around sm:gap-40 gap-20 items-center pr-10 font-semibold text-base sm:pt-4'>
+                <img src={restaurant_logo_1} className='h-32'/>
 
                 <a href='#home' className='cursor-pointer navbar-shadow hover:opacity-100 opacity-75 transition duration-300'>Home</a>
                 <a href='#benefits' className='cursor-pointer navbar-shadow hover:opacity-100 opacity-75 transition duration-300'>Benefits</a>
@@ -46,7 +48,7 @@ function Navbar() {
                 initial={{ opacity: 0, y: -50 }}
                 animate={{ opacity: isVisible ? 1 : 0, y: isVisible ? 0 : -50 }}
                 transition={{ duration: 1 }}>
-                    <img src={logoimg} className='h-12'/>
+                    <img src={restaurant_logo_1} className='h-20'/>
             </motion.div>
             {
                 menu ? 
@@ -74,7 +76,7 @@ function Navbar() {
                             <a href='#benefits' className='cursor-pointer'>Benefits</a>
                             <a href='#menu' className='cursor-pointer'>Menu</a>
                             <a href='#times' className='cursor-pointer'>Times</a>
-                            <a href='#book' className='cursor-pointer'>Book Now</a>
+                            {/*<a href='#book' className='cursor-pointer'>Book Now</a>*/}
                         </div>
             }
     </>
