@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react'
 import logo from '../assets/logo.svg'
 import logoimg from '../assets/logoimg.png'
 import restaurant_logo_1 from "../assets/restaurant_logo_1.png"
-import restaurant_logo_2 from "../assets/restaurant_logo_2.png"
+import restaurantlogo from "../assets/restaurant-logo.png"
 import { HiMenuAlt2 } from "react-icons/hi";
 import { RxCross1 } from "react-icons/rx";
 import { motion } from 'framer-motion';
